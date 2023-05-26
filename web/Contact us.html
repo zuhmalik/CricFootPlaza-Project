@@ -1,0 +1,128 @@
+<html>
+<head>
+ <title> CricFootPlaza</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   
+
+</head>
+<body>
+
+    <div id="demo">
+<h1 style="color: yellow;font-family: forte; font-style: italic;">Contact us now for more information about our service</h1>
+<button type="button" onclick="loadDoc()">Click to view Details</button>
+</div>
+
+<script>
+function loadDoc() {
+    
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      "Name: Zeeshan ul Haq <br>Email: zeeshanulhaq@gmail.com <br>Address: 17 Pearlview Ave. Washington D.C. <br>Phone no.: +44 85960 9934"; 
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
+}
+</script>
+               
+                  
+         
+
+</body>
+
+       
+ <style type="text/css">
+    
+ body
+ 
+ {
+      background-image: url("./images/cd3.jpg");
+      background-size: cover;
+      height: 107%;
+ }
+ h1{
+     color: white;
+ }
+ #demo{
+     color: white;
+     font-size: 30px;
+     margin-left: 30%;
+     margin-top: 15%;
+ }
+ button{
+     color: black;
+ }
+  #nav
+  {
+   
+   background: white;
+   max-height: 800px;
+  }
+  ul
+  {
+           list-style: none;
+           padding: 0;
+        
+           position: absolute;
+  }
+  ul li
+  {
+           float: left;
+          margin-top: 20px;
+  }
+  ul li a
+  {
+   width: 150px;
+   color: white;
+   display: block;
+   text-decoration: none;
+   font-size: 20px;
+   text-align: center;
+   padding: 10px;
+   border-radius: 10px;
+   font-family: Century Gothic;
+   font-weight: bold;
+  }
+  a:hover
+  {
+   background: white;
+  }
+  ul li ul
+  {
+   background: navy;
+   margin-top: 10px;
+  }
+  ul li ul:hover
+  {
+   transition: 2s ease;
+   background: blue;
+   color: white;
+  }
+  ul li ul li
+  {
+   float: none;
+  }
+  ul li ul
+  {
+   display:none; 
+  }
+  ul li:hover ul
+  {
+   display: block;
+  }
+  .section{
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+ 
+  }
+ </style>
+</html>
+ 

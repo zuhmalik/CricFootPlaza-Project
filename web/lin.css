@@ -1,0 +1,38 @@
+.okk h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: gold;
+}
+.okk ul li {
+    margin-left: 20px;
+    color: blue;
+}
+.okk ul li{
+    width: 90%;
+    height: auto;
+    background-color: aliceblue;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    
+    list-style: none;
+    text-align: center;
+    
+    
+    
+    
+}
+.okk ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    
+    
+}
+.weer label {
+    color: white;
+}
+body{
+    background-image: url("./images/92.jpg");
+    background-size: cover;
+   
+}
